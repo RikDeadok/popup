@@ -1,0 +1,168 @@
+/*<ОБНУЛЕНИЯ>=========================================================*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+button{
+    background: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+    background-color: #111;
+    line-height: 1;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*<КНОПКА>============================================================*/
+.button {
+    width: 235px;
+    height: 70px;
+    border: solid 1px #640101;
+    border-radius: 5px;
+    background: linear-gradient(#ff0000, #830000);
+    color: #ffffff;
+    font-size: 18px;
+    box-shadow: 0 0 75px #ff4646;
+    transition: 0.1s ease;
+    cursor: pointer;
+}
+.button:hover {
+    opacity: 0.8;
+}
+.button:active {
+    width: 211px;
+    height: 63px;
+    font-size: 16px;
+}
+/*<ПОПАП>==============================================================*/
+.popup {
+    position: absolute;
+    top: 120%;
+    display: inline-block;
+    cursor: pointer;
+    visibility: hidden;
+}
+.show {
+    visibility: visible;
+    top: 20%;
+    animation: fadeIn 1s
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+/*<ФОРМА>==============================================================*/
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.form__wrapper {
+    height: 500px;
+    width: 800px;
+    background-color: #ffffff;
+    border: solid 1px #000000;
+    border-radius: 30px;
+}
+.form__container {
+    margin: 20px 50px;
+}
+.form__exit {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 15px 0 0;
+    color: #ff0000;
+}
+.form__title {
+    font-size: 30px;
+    font-weight: 700;
+    max-width: 370px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.form__body {
+    display: flex;
+    flex-direction: column;
+}
+.form__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.form__label {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.form__input {
+    border: solid 1px #a4a4a4;
+    border-radius: 4px;
+    max-width: 320px;
+    min-height: 44px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 18px;
+    line-height: 18px;
+ }
+.form__input::placeholder {
+    font-size: 18px;
+    line-height: 18px;
+    color: #a4a4a4;
+    font-family: sans-serif;
+ }
+.form__input:focus {
+    border: solid 1px #a4a4a4;
+ }
+.form__input:hover {
+    border: solid 1px #a4a4a4;
+ }
+.form__button {
+    max-width: 320px;
+    min-height: 70px;
+    background-color: #4fc05d;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 7px;
+    border-bottom: solid 5px #337e3d;
+}
+.form__size {
+    display: flex;
+    margin-top: 12px;
+    font-size: 11px;
+    color: #a4a4a4;
+    justify-content: space-around;
+}
